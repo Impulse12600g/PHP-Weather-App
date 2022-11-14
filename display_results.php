@@ -13,10 +13,9 @@ if ($error_message != '') {
 }
 
 //Replace xxxx with your own key in the following url
-//$location ='https://api.openweathermap.org/data/2.5/weather?q=Tokyo,&units=imperial&appid=bdadc18dfa8a9445e767d57fcc5c81ca';
 
 $location1 = 'https://api.openweathermap.org/data/2.5/weather?q=';
-$location2 = ',&units=imperial&appid=bdadc18dfa8a9445e767d57fcc5c81ca';
+$location2 = ',&units=imperial&appid=xxxxxxxxxxxx';
 $location = $location1 . $city . $location2;
 $news_contents = file_get_contents ($location);
 $json = json_decode ($news_contents, true);
